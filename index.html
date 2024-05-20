@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Homeword JS B4_B5</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+
+  <body>
+    <!-- Bài tập: Quản lý tuyển sinh -->
+    <div class="container">
+      <h2 style="text-align: center; color: chocolate">
+        Bài tập: Quản lý tuyển sinh
+      </h2>
+      <div class="mb-3">
+        <label for="" class="form-label">Điểm chuẩn hội đồng</label>
+        <input
+          type="text"
+          class="form-control"
+          name=""
+          id="diemHoiDong"
+          placeholder="Nhập vào điểm chuẩn của hội hội đồng: "
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="" class="form-label">Điểm Toán</label>
+        <input
+          type="text"
+          class="form-control"
+          name=""
+          id="diemToan"
+          placeholder="Nhập vào điểm Toán: "
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="" class="form-label">Điểm Văn</label>
+        <input
+          type="text"
+          class="form-control"
+          name=""
+          id="diemVan"
+          placeholder="Nhập vào điểm Văn: "
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="" class="form-label">Điểm Anh</label>
+        <input
+          type="text"
+          class="form-control"
+          name=""
+          id="diemAnh"
+          placeholder="Nhập vào điểm Anh: "
+        />
+      </div>
+
+      <!-- <div class="mb-3">
+        <label for="" class="form-label">Nhập khu vực ưu tiên</label>
+        <input
+          type="text"
+          class="form-control"
+          name=""
+          id="khuVuc"
+          placeholder="Nhập khu vực ưu tiên: "
+        />
+      </div> -->
+
+      <!--Dropdow list Khu vực ưu tiên  -->
+      <div class="dropdownlist">
+        <div class="container">
+          <div class="dropdown">
+            <a
+              class="btn btn-secondary dropdown-toggle"
+              href="#"
+              role="button"
+              id="dropdownMenuLink"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Chọn khu vực ưu tiên
+            </a>
+
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="#">A</a></li>
+              <li><a class="dropdown-item" href="#">B</a></li>
+              <li><a class="dropdown-item" href="#">C</a></li>
+            </ul>
+          </div>
+
+          <br /><br />
+          <!--Dropdow list Đối tượng ưu tiên  -->
+          <div class="dropdown">
+            <a
+              class="btn btn-secondary dropdown-toggle"
+              href="#"
+              role="button"
+              id="dropdownMenuLink"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Chọn đối tượng ưu tiên
+            </a>
+
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="#">1</a></li>
+              <li><a class="dropdown-item" href="#">2</a></li>
+              <li><a class="dropdown-item" href="#">3</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="mb-3">
+        <label for="" class="form-label">Nhập đối tượng ưu tiên</label>
+        <input
+          type="text"
+          class="form-control"
+          name=""
+          id="doiTuong"
+          placeholder="Nhập đối tượng ưu tiên: "
+        />
+      </div> -->
+      <br /><br />
+      <button class="btn btn-outline-dark" id="btnTong">Điểm tổng 3 môn</button>
+    </div>
+    <br /><br /><br /><br /><br />
+
+    <!-- Bài tập Tính tiền điện -->
+    <div class="container">
+      <h2>Bài tập Tính tiền điện</h2>
+      <div class="mb-3" id="baiTap2">
+        <label for="" class="form-label">Nhập số ký điện</label>
+        <input
+          type="number"
+          class="form-control"
+          name=""
+          id="soDien"
+          aria-describedby="helpId"
+          placeholder="Nhập số ký điện: "
+        />
+      </div>
+      <button class="btn btn-dark" id="btnDien">Tính tiền điện</button>
+    </div>
+    <br /><br /><br /><br /><br />
+
+    <!-- Bài tập: Tính thuế thu nhập cá nhân -->
+    <div class="container">
+      <h2>Tính thuế thu nhập cá nhân</h2>
+      <div class="mb-3">
+        <label for="" class="form-label">Họ và tên</label>
+        <input
+          type="text"
+          class="form-control"
+          name=""
+          id="hoTen"
+          aria-describedby="helpId"
+          placeholder="Họ và tên: "
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="" class="form-label">Nhập tổng thu nhập</label>
+        <input
+          type="number"
+          class="form-control"
+          name=""
+          id="thuNhap"
+          aria-describedby="helpId"
+          placeholder="Nhập tổng thu nhập: "
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="" class="form-label">Số người phụ thuộc</label>
+        <input
+          type="number"
+          class="form-control"
+          name=""
+          id="phuThuoc"
+          aria-describedby="helpId"
+          placeholder="Số người phụ thuộc: "
+        />
+      </div>
+      <button class="btn btn-outline-success" id="thuNhapChiuThue">
+        Thu nhập chịu thuế
+      </button>
+      <div
+        class="bg-secondary text-white p-2 rounded bg-opacity-75 mt-4"
+        id="thue"
+      ></div>
+    </div>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="./index.js"></script> -->
+    <script src="./index.js"></script>
+  </body>
+</html>

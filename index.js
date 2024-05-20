@@ -159,5 +159,25 @@ document.getElementById("thuNhapChiuThue").onclick = function () {
         style: "currency",
         currency: "VND",
       });
+  } else if (
+    tongThuNhapChiuThue > 210000000 &&
+    tongThuNhapChiuThue <= 384000000
+  ) {
+    let h = tongThuNhapChiuThue - 210000000;
+    let k = tongThuNhapChiuThue - h - 120000000;
+    let l = tongThuNhapChiuThue - h - k - 60000000;
+    let m = h * 0.2 + k * 0.15 + l * 0.1 + l * 0.05;
+    document.getElementById("thue").innerHTML =
+      "Thu nhập chịu thuế của anh/ chị " +
+      hoTen +
+      ": " +
+      m.toLocaleString("vi", {
+        style: "currency",
+        currency: "VND",
+      });
+  } else if (
+    tongThuNhapChiuThue > 384000000 &&
+    tongThuNhapChiuThue <= 624000000
+  ) {
   }
 };

@@ -179,5 +179,60 @@ document.getElementById("thuNhapChiuThue").onclick = function () {
     tongThuNhapChiuThue > 384000000 &&
     tongThuNhapChiuThue <= 624000000
   ) {
+    // let n = tongThuNhapChiuThue - 384000000;
+    let a1 = tongThuNhapChiuThue - 384000000; // 25%
+    let a2 = tongThuNhapChiuThue - a1 - 210000000; // 20%
+    let a3 = tongThuNhapChiuThue - a1 - a2 - 120000000; // 15%
+    let a4 = tongThuNhapChiuThue - a1 - a2 - a3 - 60000000; // 5% && 10%
+    let a5 = a1 * 0.25 + a2 * 0.2 + a3 * 0.15 + a4 * 0.1 + a4 * 0.05;
+    document.getElementById("thue").innerHTML =
+      "Thu nhập chịu thuế của anh/ chị " +
+      hoTen +
+      ": " +
+      a5.toLocaleString("vi", {
+        style: "currency",
+        currency: "VND",
+      });
+  } else if (
+    tongThuNhapChiuThue > 624000000 &&
+    tongThuNhapChiuThue <= 960000000
+  ) {
+    let b1 = tongThuNhapChiuThue - 624000000; // 30
+    let b2 = tongThuNhapChiuThue - b1 - 384000000; // 25
+    let b3 = tongThuNhapChiuThue - b2 - b1 - 210000000; // 20
+    let b4 = tongThuNhapChiuThue - b3 - b2 - b1 - 120000000; // 15
+    let b5 = tongThuNhapChiuThue - b4 - b3 - b2 - b1 - 60000000; // 5 && 10
+    let b6 = b1 * 0.3 + b2 * 0.25 + b3 * 0.2 + b4 * 0.15 + b5 * 0.05 + b5 * 0.1;
+    document.getElementById("thue").innerHTML =
+      "Thu nhập chịu thuế của anh/ chị " +
+      hoTen +
+      ": " +
+      b6.toLocaleString("vi", {
+        style: "currency",
+        currency: "VND",
+      });
+  } else if (tongThuNhapChiuThue > 960000000) {
+    let c1 = tongThuNhapChiuThue - 960000000; // 35
+    let c2 = tongThuNhapChiuThue - c1 - 624000000; // 30
+    let c3 = tongThuNhapChiuThue - c1 - c2 - 384000000; // 25
+    let c4 = tongThuNhapChiuThue - c3 - c2 - c1 - 210000000; // 20
+    let c5 = tongThuNhapChiuThue - c4 - c3 - c2 - c1 - 120000000; // 15
+    let c6 = tongThuNhapChiuThue - c5 - c4 - c3 - c2 - c1 - 60000000; // 10 & 5
+    let c7 =
+      c1 * 0.35 +
+      c2 * 0.3 +
+      c3 * 0.25 +
+      c4 * 0.2 +
+      c5 * 0.15 +
+      c6 * 0.1 +
+      c6 * 0.05;
+    document.getElementById("thue").innerHTML =
+      "Thu nhập chịu thuế của anh/ chị " +
+      hoTen +
+      ": " +
+      c7.toLocaleString("vi", {
+        style: "currency",
+        currency: "VND",
+      });
   }
 };

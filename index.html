@@ -161,6 +161,7 @@
     <!-- Bài tập: Tính thuế thu nhập cá nhân -->
     <div class="container">
       <h2>Tính thuế thu nhập cá nhân</h2>
+
       <div class="mb-3">
         <label for="" class="form-label">Họ và tên</label>
         <input
@@ -204,6 +205,82 @@
         id="thue"
       ></div>
     </div>
+    <br /><br /><br />
+
+    <!-- Bài tập: Tính tiền cáp -->
+    <div class="container">
+      <br />
+      <h2>Bài tập: Tính tiền cáp</h2>
+      <br />
+      <!--Dropdow list Chọn khách hàng  -->
+      <!-- <div class="dropdownlist">
+          <div class="container">
+            <div class="dropdown">
+              <a
+                class="btn btn-secondary dropdown-toggle"
+                href="#"
+                role="button"
+                id="dropdownMenuLink"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Chọn loại khách hàng
+              </a>
+  
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Nhà dân</a></li>
+                <li><a class="dropdown-item" href="#">Doanh nghiệp</a></li>
+              </ul>
+            </div> -->
+
+      <select id="mySelect" onchange="myFunction()">
+        <option id="nhaDan" value="Nhà dân">Nhà dân</option>
+        <option id="doanhNghiep" value="Doanh nghiệp">Doanh nghiệp</option>
+      </select>
+      <p id="demo"></p>
+
+      <br />
+      <div class="mb-3">
+        <label for="" class="form-label">Mã khách hàng</label>
+        <input
+          type="text"
+          class="form-control"
+          name=""
+          id="maKH"
+          aria-describedby="helpId"
+          placeholder="Mã khách hàng: "
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="" class="form-label">Số kênh cao cấp</label>
+        <input
+          type="text"
+          class="form-control"
+          name=""
+          id="soKenhCC"
+          aria-describedby="helpId"
+          placeholder="Số kênh cao cấp: "
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="" class="form-label">Số kết nối</label>
+        <input
+          type="text"
+          class="form-control"
+          name=""
+          id="soKetNoi"
+          aria-describedby="helpId"
+          placeholder="Số kết nối: "
+        />
+      </div>
+      <button class="btn btn-outline-dark" id="btnCap">Tính tiền cáp</button>
+      <div
+        class="bg-secondary text-white p-2 rounded bg-opacity-75 mt-4"
+        id="tinhTienCap"
+      ></div>
+    </div>
 
     <!-- Bootstrap JavaScript Libraries -->
     <script
@@ -219,5 +296,12 @@
     ></script>
     <!-- <script src="./index.js"></script> -->
     <script src="./index.js"></script>
+    <!-- Script xử lý chọn "Nhà dân" or "Doanh nghiệp"  -->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("mySelect").value;
+        document.getElementById("demo").innerHTML = "You selected: " + x;
+      }
+    </script>
   </body>
 </html>

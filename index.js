@@ -236,3 +236,30 @@ document.getElementById("thuNhapChiuThue").onclick = function () {
       });
   }
 };
+
+// Bài tập: Tính tiền cáp
+const NhaDan = "Nhà dân";
+const DoanhNghiep = "Doanh nghiệp";
+
+document.getElementById("btnCap").onclick = function () {
+  // let maKH = document.getElementById("maKH").value;
+  let soKenhCC = document.getElementById("soKenhCC").value * 1;
+  let soKetNoi = document.getElementById("soKetNoi").value * 1;
+  let loaiKH = "Nhà dân";
+  let loaiKH2 = "Doanh nghiệp";
+
+  if (loaiKH == "Nhà dân") {
+    let maKH = document.getElementById("maKH").value;
+    let n = soKenhCC;
+    let tienCap = 4.5 + 20.5 + n * 7.5;
+    console.log(tienCap);
+    document.getElementById("tinhTienCap").innerHTML =
+      "Số tiền cáp phải thanh toán: " +
+      maKH +
+      ": " +
+      tienCap.toLocaleString("vi", {
+        style: "currency",
+        currency: "VND",
+      });
+  }
+};

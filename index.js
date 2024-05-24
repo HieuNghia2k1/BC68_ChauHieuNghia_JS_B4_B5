@@ -9,15 +9,15 @@ document.getElementById("btnTong").onclick = function () {
   let khuVuc = "A";
   switch (khuVuc) {
     case "A": {
-      return khuVuc == 1;
+      return (kv1 = 1);
       break;
     }
     case "B": {
-      return khuVuc == 2;
+      return (kv2 = 2);
       break;
     }
     case "C": {
-      return khuVuc == 3;
+      return (kv3 = 3);
       break;
     }
     case "X":
@@ -32,28 +32,33 @@ document.getElementById("btnTong").onclick = function () {
   let doiTuong = "1";
   switch (doiTuong) {
     case "1": {
-      return doiTuong == 2.5;
+      return (dt1 = 2.5);
       break;
     }
     case "2": {
-      return doiTuong == 1.5;
+      return (dt2 = 1.5);
       break;
     }
     case "3":
       {
-        return doiTuong == 1;
+        return (dt3 = 1);
       }
       console.log(doiTuong);
   }
 
   // Viết hàm xử lý khi nhập vào điểm bằng 0 thì sẽ trả về thông báo bạn đã thi trượt
   if (diemAnh || diemToan || diemVan == 0) {
-    return "Bạn đã không vượt qua kì thi này";
+    // return "Bạn đã không vượt qua kì thi này";
+    // document.getElementById("bai1").innerHTML =
+    //   "Bạn đã không vượt qua kì thi này";
+    alert("Bạn đã không vượt qua kì thi này!!!");
+  } else if (diemAnh || diemToan || diemVan > 10) {
+    console.log("Bạn đã không vượt qua kì thi này!!!");
   }
 
   let tongDiem3Mon = diemToan + diemAnh + diemVan;
   console.log(tongDiem3Mon);
-  document.getElementById("btnTong").innerHTML =
+  document.getElementById("bai1").innerHTML =
     "Chúc mừng bạn đã vượt qua kì thi với số điểm: " + tongDiem3Mon;
 };
 
@@ -70,6 +75,8 @@ document.getElementById("btnDien").onclick = function () {
     let a1 = n * 500;
     // return a1;
     console.log(a1);
+    document.getElementById("bai2").innerHTML =
+      "Tiền điện quý khách phải trả: " + a1 + " " + "VND";
   } else if (n > 50 && n <= 100) {
     // n > 50 && n < 100
     let b = n - 50;
@@ -246,7 +253,7 @@ document.getElementById("btnCap").onclick = function () {
   let soKenhCC = document.getElementById("soKenhCC").value * 1;
   let soKetNoi = document.getElementById("soKetNoi").value * 1;
   let loaiKH = "Nhà dân";
-  let loaiKH2 = "Doanh nghiệp";
+  // let loaiKH = "Doanh nghiệp";
 
   if (loaiKH == "Nhà dân") {
     let maKH = document.getElementById("maKH").value;
@@ -262,4 +269,28 @@ document.getElementById("btnCap").onclick = function () {
         currency: "VND",
       });
   }
+
+  // Viết theo cấu trúc switch
+  // switch (loaiKH) {
+  //   case "Nhà dân": {
+  //     let maKH = document.getElementById("maKH").value;
+  //     let n = soKenhCC;
+  //     let tienCap = 4.5 + 20.5 + n * 7.5;
+  //     console.log(tienCap);
+  //     document.getElementById("tinhTienCap").innerHTML =
+  //       "Số tiền cáp phải thanh toán: " +
+  //       maKH +
+  //       ": " +
+  //       tienCap.toLocaleString("vi", {
+  //         style: "currency",
+  //         currency: "VND",
+  //       });
+  //       break;
+  //       case "Doanh nghiệp": {
+  //         let maKH = document.getElementById("maKH").value;
+  //     let n = soKenhCC;
+  //       }
+
+  //   }
+  // }
 };

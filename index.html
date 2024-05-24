@@ -22,66 +22,67 @@
   <body>
     <!-- Bài tập: Quản lý tuyển sinh -->
     <div class="container">
-      <h2 style="text-align: center; color: chocolate">
-        Bài tập: Quản lý tuyển sinh
-      </h2>
-      <div class="mb-3">
-        <label for="" class="form-label">Điểm chuẩn hội đồng</label>
-        <input
-          type="text"
-          class="form-control"
-          name=""
-          id="diemHoiDong"
-          placeholder="Nhập vào điểm chuẩn của hội hội đồng: "
-        />
-      </div>
+      <div class="col-6">
+        <h2 style="text-align: center; color: chocolate">
+          Bài tập: Quản lý tuyển sinh
+        </h2>
+        <div class="mb-3">
+          <label for="" class="form-label">Điểm chuẩn hội đồng</label>
+          <input
+            type="text"
+            class="form-control"
+            name=""
+            id="diemHoiDong"
+            placeholder="Nhập vào điểm chuẩn của hội hội đồng: "
+          />
+        </div>
 
-      <div class="mb-3">
-        <label for="" class="form-label">Điểm Toán</label>
-        <input
-          type="text"
-          class="form-control"
-          name=""
-          id="diemToan"
-          placeholder="Nhập vào điểm Toán: "
-        />
-      </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Điểm Toán</label>
+          <input
+            type="text"
+            class="form-control"
+            name=""
+            id="diemToan"
+            placeholder="Nhập vào điểm Toán: "
+          />
+        </div>
 
-      <div class="mb-3">
-        <label for="" class="form-label">Điểm Văn</label>
-        <input
-          type="text"
-          class="form-control"
-          name=""
-          id="diemVan"
-          placeholder="Nhập vào điểm Văn: "
-        />
-      </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Điểm Văn</label>
+          <input
+            type="text"
+            class="form-control"
+            name=""
+            id="diemVan"
+            placeholder="Nhập vào điểm Văn: "
+          />
+        </div>
 
-      <div class="mb-3">
-        <label for="" class="form-label">Điểm Anh</label>
-        <input
-          type="text"
-          class="form-control"
-          name=""
-          id="diemAnh"
-          placeholder="Nhập vào điểm Anh: "
-        />
-      </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Điểm Anh</label>
+          <input
+            type="text"
+            class="form-control"
+            name=""
+            id="diemAnh"
+            placeholder="Nhập vào điểm Anh: "
+          />
+        </div>
 
-      <!-- <div class="mb-3">
-        <label for="" class="form-label">Nhập khu vực ưu tiên</label>
-        <input
-          type="text"
-          class="form-control"
-          name=""
-          id="khuVuc"
-          placeholder="Nhập khu vực ưu tiên: "
-        />
-      </div> -->
+        <div class="mb-3">
+          <label for="" class="form-label">Nhập khu vực ưu tiên</label>
+          <input
+            type="text"
+            class="form-control"
+            name=""
+            id="khuVuc"
+            placeholder="Nhập khu vực ưu tiên: "
+          />
+        </div>
 
-      <!--Dropdow list Khu vực ưu tiên  -->
-      <div class="dropdownlist">
+        <!--Dropdow list Khu vực ưu tiên  -->
+        <!-- <div class="dropdownlist">
         <div class="container">
           <div class="dropdown">
             <a
@@ -103,8 +104,8 @@
           </div>
 
           <br /><br />
-          <!--Dropdow list Đối tượng ưu tiên  -->
-          <div class="dropdown">
+          <!Dropdow list Đối tượng ưu tiên  -->
+        <!-- <div class="dropdown">
             <a
               class="btn btn-secondary dropdown-toggle"
               href="#"
@@ -123,38 +124,51 @@
             </ul>
           </div>
         </div>
-      </div>
+      </div>  -->
 
-      <!-- <div class="mb-3">
-        <label for="" class="form-label">Nhập đối tượng ưu tiên</label>
-        <input
-          type="text"
-          class="form-control"
-          name=""
-          id="doiTuong"
-          placeholder="Nhập đối tượng ưu tiên: "
-        />
-      </div> -->
-      <br /><br />
-      <button class="btn btn-outline-dark" id="btnTong">Điểm tổng 3 môn</button>
+        <div class="mb-3">
+          <label for="" class="form-label">Nhập đối tượng ưu tiên</label>
+          <input
+            type="text"
+            class="form-control"
+            name=""
+            id="doiTuong"
+            placeholder="Nhập đối tượng ưu tiên: "
+          />
+        </div>
+        <br /><br />
+        <button class="btn btn-outline-dark" id="btnTong">
+          Điểm tổng 3 môn
+        </button>
+        <div
+          class="bg-secondary text-white p-2 rounded bg-opacity-75 mt-4"
+          id="bai1"
+        ></div>
+      </div>
     </div>
     <br /><br /><br /><br /><br />
 
     <!-- Bài tập Tính tiền điện -->
     <div class="container">
-      <h2>Bài tập Tính tiền điện</h2>
-      <div class="mb-3" id="baiTap2">
-        <label for="" class="form-label">Nhập số ký điện</label>
-        <input
-          type="number"
-          class="form-control"
-          name=""
-          id="soDien"
-          aria-describedby="helpId"
-          placeholder="Nhập số ký điện: "
-        />
+      <div class="col-4">
+        <h2 style="text-align: center; color: blue">Bài tập Tính tiền điện</h2>
+        <div class="mb-3" id="baiTap2">
+          <label for="" class="form-label">Nhập số ký điện</label>
+          <input
+            type="number"
+            class="form-control"
+            name=""
+            id="soDien"
+            aria-describedby="helpId"
+            placeholder="Nhập số ký điện: "
+          />
+        </div>
+        <button class="btn btn-dark" id="btnDien">Tính tiền điện</button>
+        <div
+          class="bg-secondary text-white p-2 rounded bg-opacity-75 mt-4"
+          id="bai2"
+        ></div>
       </div>
-      <button class="btn btn-dark" id="btnDien">Tính tiền điện</button>
     </div>
     <br /><br /><br /><br /><br />
 
@@ -209,11 +223,12 @@
 
     <!-- Bài tập: Tính tiền cáp -->
     <div class="container">
-      <br />
-      <h2>Bài tập: Tính tiền cáp</h2>
-      <br />
-      <!--Dropdow list Chọn khách hàng  -->
-      <!-- <div class="dropdownlist">
+      <div class="col-6">
+        <br />
+        <h2>Bài tập: Tính tiền cáp</h2>
+        <br />
+        <!--Dropdow list Chọn khách hàng  -->
+        <!-- <div class="dropdownlist">
           <div class="container">
             <div class="dropdown">
               <a
@@ -233,53 +248,54 @@
               </ul>
             </div> -->
 
-      <select id="mySelect" onchange="myFunction()">
-        <option id="nhaDan" value="Nhà dân">Nhà dân</option>
-        <option id="doanhNghiep" value="Doanh nghiệp">Doanh nghiệp</option>
-      </select>
-      <p id="demo"></p>
+        <select id="mySelect" onchange="myFunction()">
+          <option id="nhaDan" value="Nhà dân">Nhà dân</option>
+          <option id="doanhNghiep" value="Doanh nghiệp">Doanh nghiệp</option>
+        </select>
+        <p id="demo"></p>
 
-      <br />
-      <div class="mb-3">
-        <label for="" class="form-label">Mã khách hàng</label>
-        <input
-          type="text"
-          class="form-control"
-          name=""
-          id="maKH"
-          aria-describedby="helpId"
-          placeholder="Mã khách hàng: "
-        />
-      </div>
+        <br />
+        <div class="mb-3">
+          <label for="" class="form-label">Mã khách hàng</label>
+          <input
+            type="text"
+            class="form-control"
+            name=""
+            id="maKH"
+            aria-describedby="helpId"
+            placeholder="Mã khách hàng: "
+          />
+        </div>
 
-      <div class="mb-3">
-        <label for="" class="form-label">Số kênh cao cấp</label>
-        <input
-          type="text"
-          class="form-control"
-          name=""
-          id="soKenhCC"
-          aria-describedby="helpId"
-          placeholder="Số kênh cao cấp: "
-        />
-      </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Số kênh cao cấp</label>
+          <input
+            type="text"
+            class="form-control"
+            name=""
+            id="soKenhCC"
+            aria-describedby="helpId"
+            placeholder="Số kênh cao cấp: "
+          />
+        </div>
 
-      <div class="mb-3">
-        <label for="" class="form-label">Số kết nối</label>
-        <input
-          type="text"
-          class="form-control"
-          name=""
-          id="soKetNoi"
-          aria-describedby="helpId"
-          placeholder="Số kết nối: "
-        />
+        <div class="mb-3">
+          <label for="" class="form-label">Số kết nối</label>
+          <input
+            type="text"
+            class="form-control"
+            name=""
+            id="soKetNoi"
+            aria-describedby="helpId"
+            placeholder="Số kết nối: "
+          />
+        </div>
+        <button class="btn btn-outline-dark" id="btnCap">Tính tiền cáp</button>
+        <div
+          class="bg-secondary text-white p-2 rounded bg-opacity-75 mt-4"
+          id="tinhTienCap"
+        ></div>
       </div>
-      <button class="btn btn-outline-dark" id="btnCap">Tính tiền cáp</button>
-      <div
-        class="bg-secondary text-white p-2 rounded bg-opacity-75 mt-4"
-        id="tinhTienCap"
-      ></div>
     </div>
 
     <!-- Bootstrap JavaScript Libraries -->

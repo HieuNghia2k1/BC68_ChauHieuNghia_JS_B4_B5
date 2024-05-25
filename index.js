@@ -97,8 +97,6 @@ document.getElementById("btnTong").onclick = function () {
     console.log(tongDiem3Mon);
   }
 
-  tongDiem3Mon = diemToan + diemAnh + diemVan;
-  console.log(tongDiem3Mon);
   document.getElementById("bai1").innerHTML =
     "Chúc mừng bạn đã vượt qua kì thi với số điểm: " + tongDiem3Mon;
 };

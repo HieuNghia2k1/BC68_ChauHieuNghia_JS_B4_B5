@@ -73,13 +73,13 @@ document.getElementById("btnTong").onclick = function () {
   else if (diemAnh || diemToan || diemVan > 10) {
     console.log("Bạn đã không vượt qua kì thi này!!!");
   } else if ((khuVuc = "B" && doiTuong == 1)) {
-    let tongDiem3Mon = diemToBn + diemBnh + diemVan + kv1 + dt1;
+    let tongDiem3Mon = diemToBn + diemBnh + diemVan + kv2 + dt1;
     console.log(tongDiem3Mon);
   } else if ((khuVuc = "B" && doiTuong == 2)) {
-    let tongDiem3Mon = diemToan + diemAnh + diemVan + kv1 + dt2;
+    let tongDiem3Mon = diemToan + diemAnh + diemVan + kv2 + dt2;
     console.log(tongDiem3Mon);
   } else if ((khuVuc = "B" && doiTuong == 3)) {
-    let tongDiem3Mon = diemToan + diemAnh + diemVan + kv1 + dt3;
+    let tongDiem3Mon = diemToan + diemAnh + diemVan + kv2 + dt3;
     console.log(tongDiem3Mon);
   }
 
@@ -87,13 +87,13 @@ document.getElementById("btnTong").onclick = function () {
   else if (diemAnh || diemToan || diemVan > 10) {
     console.log("Bạn đã không vượt qua kì thi này!!!");
   } else if ((khuVuc = "C" && doiTuong == 1)) {
-    let tongDiem3Mon = diemToan + diemAnh + diemVan + kv1 + dt1;
+    let tongDiem3Mon = diemToan + diemAnh + diemVan + kv3 + dt1;
     console.log(tongDiem3Mon);
   } else if ((khuVuc = "C" && doiTuong == 2)) {
-    let tongDiem3Mon = diemToan + diemAnh + diemVan + kv1 + dt2;
+    let tongDiem3Mon = diemToan + diemAnh + diemVan + kv3 + dt2;
     console.log(tongDiem3Mon);
   } else if ((khuVuc = "C" && doiTuong == 3)) {
-    let tongDiem3Mon = diemToan + diemAnh + diemVan + kv1 + dt3;
+    let tongDiem3Mon = diemToan + diemAnh + diemVan + kv3 + dt3;
     console.log(tongDiem3Mon);
   }
 

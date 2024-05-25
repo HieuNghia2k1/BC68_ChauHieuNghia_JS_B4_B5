@@ -1,23 +1,25 @@
 document.getElementById("btnTong").onclick = function () {
+  let diemChuan = document.getElementById("diemHoiDong").value * 1;
   let diemToan = document.getElementById("diemToan").value * 1;
   let diemVan = document.getElementById("diemVan").value * 1;
   let diemAnh = document.getElementById("diemAnh").value * 1;
-  // let khuVuc = document.getElementById("khuVuc").value;
-  // let doiTuong = document.getElementById("doiTuong").value * 1;
+  let khuVuc = document.getElementById("khuVuc").value;
+  let doiTuong = document.getElementById("doiTuong").value;
+  let tongDiem3Mon = 0;
 
   // Viết hàm xử lý khi người dùng chọn khu vực
-  let khuVuc = "A";
+  let kv = console.log(khuVuc);
   switch (khuVuc) {
     case "A": {
-      return (kv1 = 1);
+      return (kv1 = Math.floor(1));
       break;
     }
     case "B": {
-      return (kv2 = 2);
+      return (kv2 = Math.floor(2));
       break;
     }
     case "C": {
-      return (kv3 = 3);
+      return (kv3 = Math.floor(3));
       break;
     }
     case "X":
@@ -29,25 +31,25 @@ document.getElementById("btnTong").onclick = function () {
 
   // Viết hàm xử lý khi user chọn đối tượng
 
-  let doiTuong = "1";
+  let dt = console.log(doiTuong);
   switch (doiTuong) {
     case "1": {
-      return (dt1 = 2.5);
+      let = dt1 = Math.floor(2.5);
       break;
     }
     case "2": {
-      return (dt2 = 1.5);
+      let = dt2 = Math.floor(1.5);
       break;
     }
     case "3":
       {
-        return (dt3 = 1);
+        let = dt3 = Math.floor(1);
       }
       console.log(doiTuong);
   }
 
   // Viết hàm xử lý khi nhập vào điểm bằng 0 thì sẽ trả về thông báo bạn đã thi trượt
-  if (diemAnh || diemToan || diemVan == 0) {
+  if (diemAnh || diemToan || diemVan <= 0) {
     // return "Bạn đã không vượt qua kì thi này";
     // document.getElementById("bai1").innerHTML =
     //   "Bạn đã không vượt qua kì thi này";
@@ -55,8 +57,47 @@ document.getElementById("btnTong").onclick = function () {
   } else if (diemAnh || diemToan || diemVan > 10) {
     console.log("Bạn đã không vượt qua kì thi này!!!");
   }
+  // Khu Vuc A
+  else if ((khuVuc = "A" && doiTuong == 1)) {
+    let tongDiem3Mon = diemToan + diemAnh + diemVan + kv1 + dt1;
+    console.log(tongDiem3Mon);
+  } else if ((khuVuc = "A" && doiTuong == 2)) {
+    let tongDiem3Mon = diemToan + diemAnh + diemVan + kv1 + dt2;
+    console.log(tongDiem3Mon);
+  } else if ((khuVuc = "A" && doiTuong == 3)) {
+    let tongDiem3Mon = diemToan + diemAnh + diemVan + kv1 + dt3;
+    console.log(tongDiem3Mon);
+  }
 
-  let tongDiem3Mon = diemToan + diemAnh + diemVan;
+  // Khu Vuc B
+  else if (diemAnh || diemToan || diemVan > 10) {
+    console.log("Bạn đã không vượt qua kì thi này!!!");
+  } else if ((khuVuc = "B" && doiTuong == 1)) {
+    let tongDiem3Mon = diemToBn + diemBnh + diemVan + kv1 + dt1;
+    console.log(tongDiem3Mon);
+  } else if ((khuVuc = "B" && doiTuong == 2)) {
+    let tongDiem3Mon = diemToan + diemAnh + diemVan + kv1 + dt2;
+    console.log(tongDiem3Mon);
+  } else if ((khuVuc = "B" && doiTuong == 3)) {
+    let tongDiem3Mon = diemToan + diemAnh + diemVan + kv1 + dt3;
+    console.log(tongDiem3Mon);
+  }
+
+  // Khu Vuc C
+  else if (diemAnh || diemToan || diemVan > 10) {
+    console.log("Bạn đã không vượt qua kì thi này!!!");
+  } else if ((khuVuc = "C" && doiTuong == 1)) {
+    let tongDiem3Mon = diemToan + diemAnh + diemVan + kv1 + dt1;
+    console.log(tongDiem3Mon);
+  } else if ((khuVuc = "C" && doiTuong == 2)) {
+    let tongDiem3Mon = diemToan + diemAnh + diemVan + kv1 + dt2;
+    console.log(tongDiem3Mon);
+  } else if ((khuVuc = "C" && doiTuong == 3)) {
+    let tongDiem3Mon = diemToan + diemAnh + diemVan + kv1 + dt3;
+    console.log(tongDiem3Mon);
+  }
+
+  tongDiem3Mon = diemToan + diemAnh + diemVan;
   console.log(tongDiem3Mon);
   document.getElementById("bai1").innerHTML =
     "Chúc mừng bạn đã vượt qua kì thi với số điểm: " + tongDiem3Mon;
